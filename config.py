@@ -2,8 +2,8 @@ import os
 from typing import Dict, Any
 
 # Facebook OAuth configuration
-FACEBOOK_APP_ID = "1272045840823526"
-FACEBOOK_APP_SECRET = "3a6ad4a1ec333a885a621c7f987a315a"
+FACEBOOK_APP_ID = ""
+FACEBOOK_APP_SECRET = ""
 REDIRECT_URI = "http://localhost:8000/auth/facebook/callback"
 WEBHOOK_VERIFY_TOKEN = "crmsecret123"
 
@@ -41,3 +41,4 @@ def get_oauth_url(client_id: str, state: str) -> str:
         f"scope={scope_string}&"
         f"response_type=code"
     )
+
